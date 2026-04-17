@@ -70,3 +70,7 @@ header {
   padding: 10px;
   position: sticky;
 }
+.Logo-Text {
+  text-decoration: none;
+  color: #fdfcdc;
+}

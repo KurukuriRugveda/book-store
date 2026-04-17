@@ -8,7 +8,11 @@ const Header = () => {
       <nav>
         <div className="logo-container">
           <img src="https://img.pikbest.com/png-images/20241016/creative-book-logo-vector-design_10968791.png!sw800" />
-          <p className="Logo-Text">Booksy</p>
+          <p className="Logo-Text">
+            <Link to="/" className="Logo-Text">
+              Booksy{" "}
+            </Link>
+          </p>
         </div>
         <ul className="nav-links">
           <li>
