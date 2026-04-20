@@ -11,17 +11,70 @@
   max-height: 350px;
   gap: 30px;
   margin: 20px;
+  text-decoration: none;
 }
-.img {
-  width: 30%;
-  height: 200px;
+.book-img {
+  width: 200px;
+  height: 300px;
   border-radius: 5px;
 }
-.card-footer {
+.button-icons-cont {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 .icons {
   display: flex;
   gap: 10px;
+}
+.icons-bg {
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: darkgold;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
+.icons-cont {
+  display: flex;
+  gap: 10px;
+}
+.add-to-cart-btn {
+  background-color: #03045e;
+  color: #90e0ef;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.stars {
+  color: rgb(255, 132, 0);
+}
+.card-text h3 {
+  color: #457b9d;
+  font-weight: bold;
+}
+.card-text h1 {
+  color: #1d3557;
+}
+.stars-cont {
+  color: gold;
+}
+.remove-underline {
+  text-decoration: none;
+}
+.card-para {
+  color: black;
+}
+h4 {
+  color: black;
 }
