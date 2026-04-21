@@ -1,11 +1,27 @@
 .input {
-  width: 50%;
+  width: 500px;
   padding: 10px;
-  margin-left: 50%;
   margin-top: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  border-radius: 10px;
+  border-width: 1px;
 }
 li {
   list-style-type: none;
+}
+.search-btn {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.search-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50%;
 }

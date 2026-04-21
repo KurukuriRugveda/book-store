@@ -17,6 +17,7 @@
   width: 200px;
   height: 300px;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .button-icons-cont {
   display: flex;
@@ -55,6 +56,10 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+.add-to-cart-btn:hover {
+  background-color: #0077b6;
+  color: white;
 }
 .stars {
   color: rgb(255, 132, 0);
