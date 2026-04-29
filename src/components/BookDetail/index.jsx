@@ -4,12 +4,15 @@ import { FaRegStar } from "react-icons/fa6";
 import { useParams } from "react-router";
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlineShuffle } from "react-icons/md";
+import CartContext from "../../context/CartContext";
+import { use } from "react";
 import Header from "../Header";
 import "./index.css";
 const BookDetail = () => {
   const [bookObj, setBookObj] = useState({});
   const { Title, price, description, coverImage } = bookObj;
   const { id } = useParams();
+  const { addCartItem } = use(CartContext);
   useEffect(() => {
     const getBookDetails = async () => {
       const apiUrl = "https://www.jsonkeeper.com/b/SQID2";
@@ -23,6 +26,9 @@ const BookDetail = () => {
     getBookDetails();
   }, []);
 
+  const onClickAddToCart = () => {
+    addCartItem(bookObj);
+  };
   return (
     <>
       <Header />
@@ -44,7 +50,9 @@ const BookDetail = () => {
             <span className="span-price">Price: ${price} </span>
           </p>
           <div className="button-icons-cont">
-            <button className="add-to-cart-btn">Add to Cart</button>
+            <button onClick={onClickAddToCart} className="add-to-cart-btn">
+              Add to Cart
+            </button>
             <div className="icons-bg">
               <MdFavoriteBorder className="icon" />
             </div>

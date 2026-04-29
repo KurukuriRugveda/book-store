@@ -4,10 +4,17 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { MdOutlineShuffle } from "react-icons/md";
 import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router";
+import CartContext from "../../context/CartContext";
+import { use } from "react";
 import "./index.css";
 const BookItem = (props) => {
   const { bookObj } = props;
   const { Title, price, description, coverImage, Author, Id } = bookObj;
+  const { addCartItem } = use(CartContext);
+
+  const onClickAddToCartinBi = () => {
+    addCartItem(bookObj);
+  };
   return (
     <li>
       <Link className="remove-underline" to={"/books/" + Id}>
@@ -26,7 +33,12 @@ const BookItem = (props) => {
             </div>
             <p className="card-para">{description}</p> <br />
             <div className="button-icons-cont">
-              <button className="add-to-cart-btn">Add to Cart</button>
+              <button
+                className="add-to-cart-btn"
+                onClick={onClickAddToCartinBi}
+              >
+                Add to Cart
+              </button>
               <span className="icons-cont">
                 <div className="icons-bg">
                   <MdFavoriteBorder className="icon" />
