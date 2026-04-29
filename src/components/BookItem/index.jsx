@@ -7,10 +7,10 @@ import { Link } from "react-router";
 import "./index.css";
 const BookItem = (props) => {
   const { bookObj } = props;
-  const { Title, price, description, coverImage, Author } = bookObj;
+  const { Title, price, description, coverImage, Author, Id } = bookObj;
   return (
     <li>
-      <Link className="remove-underline">
+      <Link className="remove-underline" to={"/books/" + Id}>
         <article className="card">
           <img className="book-img" src={coverImage} alt="Book-image" />
           <div className="card-text">

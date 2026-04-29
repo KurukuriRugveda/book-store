@@ -1,0 +1,27 @@
+.detail-cont {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  height: 70vh;
+}
+.sub-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.desc {
+  width: 80vw;
+}
+.add-to-cart-btn {
+  background-color: #03045e;
+  color: #90e0ef;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.span-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #03045e;
+}

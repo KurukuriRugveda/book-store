@@ -3,6 +3,7 @@ import Header from "../Header";
 import BookItem from "../BookItem";
 import { useState, useEffect } from "react";
 import { IoSearchSharp } from "react-icons/io5";
+import BookDetail from "../BookDetail";
 import "./index.css";
 const BookList = () => {
   const [bookList, setBookList] = useState([]);
