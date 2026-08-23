@@ -18,7 +18,7 @@ const Home = () => {
             collection of books.your digital sanctuary for stories that inspire,
             educate, and entertain. <br />
             We believe books are the truest friends, acting as a vast repository
-            of knowledge, imagination, and perspective. One click away. <br />
+            of knowledge, and perspective. One click away. <br />
           </p>
           <button onClick={onClickNavigate}>Explore Now</button>
         </div>
